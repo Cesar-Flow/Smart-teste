@@ -1,0 +1,78 @@
+.segmentos {
+    background: linear-gradient(160deg, #0B2D6E 0%, #1549B8 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.segmentos::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 214, 143, 0.12), transparent 65%);
+    border-radius: 50%;
+}
+
+.segmentos .tag-secao {
+    background: rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.segmentos .secao-titulo h2 {
+    color: var(--branco);
+}
+
+.segmentos .secao-titulo p {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.grid-segmentos {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+}
+
+.seg-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius);
+    padding: 28px 20px;
+    text-align: center;
+    cursor: default;
+    transition: background .25s, transform .2s;
+}
+
+.seg-card:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-4px);
+}
+
+.seg-card img {
+    width: 30%;
+    height: 30%;
+}
+
+.seg-emoji {
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.seg-card strong {
+    font-family: 'Sora', sans-serif;
+    color: var(--branco);
+    font-size: 0.95rem;
+    font-weight: 700;
+    display: block;
+}
+
+.seg-card span {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 4px;
+}

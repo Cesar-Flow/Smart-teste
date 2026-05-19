@@ -1,0 +1,58 @@
+.cta-banner {
+    background: linear-gradient(135deg, var(--verde), #00967A);
+    padding: 72px 5%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-banner::before {
+    content: '';
+    position: absolute;
+    top: -100px;
+    right: -80px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+}
+
+.cta-banner h2 {
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    font-weight: 800;
+    color: var(--branco);
+    max-width: 620px;
+    margin: 0 auto 16px;
+    line-height: 1.2;
+    position: relative;
+}
+
+.cta-banner p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 1.05rem;
+    max-width: 500px;
+    margin: 0 auto 32px;
+    position: relative;
+}
+
+.btn-cta-branco {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--branco);
+    color: var(--verde);
+    font-family: 'Sora', sans-serif;
+    font-weight: 800;
+    font-size: 1.05rem;
+    padding: 16px 32px;
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: transform .2s, box-shadow .2s;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.15);
+    position: relative;
+}
+
+.btn-cta-branco:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.2);
+}

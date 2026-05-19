@@ -1,0 +1,83 @@
+.localizacao {
+    background: var(--branco);
+}
+
+.loc-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.loc-info h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--azul);
+    margin-bottom: 22px;
+}
+
+.loc-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.loc-item-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(43, 107, 240, 0.08);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.loc-item strong {
+    display: block;
+    font-weight: 600;
+    color: var(--azul);
+    font-size: 0.9rem;
+    margin-bottom: 2px;
+}
+
+.loc-item span {
+    font-size: 0.9rem;
+    color: var(--cinza);
+    line-height: 1.5;
+}
+
+.mapa-placeholder {
+    background: linear-gradient(135deg, #e8f0fe, #dbeafe);
+    border-radius: var(--radius-grande);
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px dashed rgba(43, 107, 240, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.mapa-placeholder::before {
+    font-size: 4rem;
+}
+
+.mapa-placeholder p {
+    color: var(--azul-claro);
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.mapa-placeholder span {
+    color: var(--cinza-claro);
+    font-size: 0.82rem;
+}

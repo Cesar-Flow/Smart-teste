@@ -1,0 +1,51 @@
+.diferenciais {
+    background: var(--branco);
+}
+
+.grid-diferenciais {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+}
+
+.dif-card {
+    padding: 28px 24px;
+    border-radius: var(--radius);
+    border: 1.5px solid rgba(11, 45, 110, 0.07);
+    transition: border-color .2s, box-shadow .2s;
+}
+
+.dif-card:hover {
+    border-color: rgba(43, 107, 240, 0.2);
+    box-shadow: var(--sombra);
+}
+
+.dif-num {
+    font-family: 'Sora', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: rgba(43, 107, 240, 0.12);
+    line-height: 1;
+    margin-bottom: 4px;
+}
+
+.dif-icon {
+    font-size: 2rem;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.dif-card h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--azul);
+    margin-bottom: 10px;
+}
+
+.dif-card p {
+    color: var(--cinza);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
